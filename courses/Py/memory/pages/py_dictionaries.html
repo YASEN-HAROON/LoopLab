@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>LoopLab | Python Dictionaries</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="../Py.css" rel="stylesheet">
+        <link rel="icon" href="../../../../images/Logo.png" type="image/svg+xml">
+    </head>
+    <body>
+
+        <header>
+            <div class="header-inner">
+                <div class="logo">LoopLab</div>
+                <nav>
+                    <a href="../../../../index.html">Home</a>
+                    <a href="#" class="active">PYTHON</a>
+                    <a href="../../../Css/Css_Course.html">CSS</a>
+                    <a href="../../../Html/Html_Course.html">HTML</a>
+                    <a href="../../../Js/Js_Course.html">JS</a>
+                    <a href="../../../php/php_Course.html">PHP</a>
+                    <a href="../../../Cpp/Cpp_Course.html">C++</a>
+                </nav>
+            </div>
+        </header>
+
+        <article>
+            <div class="container">
+
+                <div class="sidenav">
+                    <h2>Python Tutorial</h2>
+                    <a href="../../Py_Course.html" >Python Home</a>
+                    <a href="py_intro.html">Python Intro</a>
+                    <a href="py_get_start.html">Get Started</a>
+                    <a href="py_syntax.html">Syntax</a>
+                    <a href="py_comments.html">Comments</a>
+                    <a href="py_variables.html">Variables</a>
+                    <a href="py_data_types.html">Data Types</a>
+                    <a href="py_numbers.html">Numbers</a>
+                    <a href="py_strings.html">Strings</a>
+                    <a href="py_booleans.html">Booleans</a>
+                    <a href="py_operators.html">Operators</a>
+                    <a href="py_lists.html">Lists</a>
+                    <a href="py_tuples.html">Tuples</a>
+                    <a href="py_sets.html">Sets</a>
+                    <a href="py_dictionaries.html" class="active">Dictionaries</a>
+                </div>
+
+                <div class="main">
+                    <h1>Dictionaries</h1>
+
+                    <h3>Accessing Items</h3>
+                    <ul>
+                        <li>Access value by using the key</li>
+                        <li>dict[key] or dict.get(key) (safer)</li><br>
+                        <li>Example :</li>
+                        <div class="code">
+                            print(student["name"])<br>
+                            print(student.get("age"))
+                        </div>
+                    </ul><hr>
+
+                    <h3>Changing Values</h3>
+                    <ul>
+                        <li>Assign a new value to an existing key</li>
+                        <div class="code">
+                            student["age"] = 22
+                        </div>
+                    </ul><hr>
+                    
+                    <h3>Adding Items</h3>
+                    <ul>
+                        <li>You can add new key–value pairs :</li>
+                        <div class="code">
+                            student["city"] = "Cairo"
+                        </div>
+                    </ul><hr>
+
+                    <h3>Removing Items</h3>
+                    <ul>
+                        <li>Several ways to remove :</li>
+                        <ul>
+                            <li>Method&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What it does</li>
+                            <li>pop(key)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes that key</li>
+                            <li>popitem()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes last inserted pair</li>
+                            <li>del dict[key]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deletes by key</li>
+                            <li>clear()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Empties entire dict</li>
+                        </ul>
+                        <div class="code">
+                            student.pop("major")
+                        </div>
+                    </ul><hr>
+
+                    <h3>Looping Through a Dictionary</h3>
+                    <ul>
+                        <li>You can loop over :</li>
+                        <ul>
+                            <li>Keys : 
+                                <div class="code">
+                                    for key in dict:
+                                </div>
+                            </li>
+                            <li>Values : 
+                                <div class="code"
+                                >for val in dict.values():
+                                </div>
+                            </li>
+                            <li>Key-Value pairs : 
+                                <div class="code">
+                                    for key, val in dict.items():
+                                </div>
+                            </li>
+                        </ul>
+                        <li>Example :</li>
+                        <div class="code">
+                            for key, val in student.items():<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;print(key, val)
+                        </div>
+                    </ul><hr>
+
+                    <h3>Copying Dictionaries</h3>
+                    <ul>
+                        <li>Shallow copy using copy() method</li>
+                        <li>Or use dict() to make a new copy</li>
+                        <div class="code">
+                            new_dict = student.copy()
+                        </div>
+                    </ul><hr>
+                    
+                    <h3>Nested Dictionaries</h3>
+                    <ul>
+                        <li>A dictionary can contain another dictionary</li>
+                        <li>Example :</li>
+                        <div class="code">
+                            students = {<br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;"s1": {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name": "Ali",<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"age": 20<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;},<br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;"s2": {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name": "Sara",<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"age": 22  <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                            }
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('header').classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+    </body>
+</html>

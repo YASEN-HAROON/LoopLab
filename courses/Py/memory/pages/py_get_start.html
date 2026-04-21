@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>LoopLab | Python Start</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="../Py.css" rel="stylesheet">
+        <link rel="icon" href="../../../../images/Logo.png" type="image/svg+xml">
+    </head>
+    <body>
+
+        <header>
+            <div class="header-inner">
+                <div class="logo">LoopLab</div>
+                <nav>
+                    <a href="../../../../index.html">Home</a>
+                    <a href="#" class="active">PYTHON</a>
+                    <a href="../../../Css/Css_Course.html">CSS</a>
+                    <a href="../../../Html/Html_Course.html">HTML</a>
+                    <a href="../../../Js/Js_Course.html">JS</a>
+                    <a href="../../../php/php_Course.html">PHP</a>
+                    <a href="../../../Cpp/Cpp_Course.html">C++</a>
+                </nav>
+            </div>
+        </header>
+
+        <article>
+            <div class="container">
+
+                <div class="sidenav">
+                    <h2>Python Tutorial</h2>
+                    <a href="../../Py_Course.html" >Python Home</a>
+                    <a href="py_intro.html">Python Intro</a>
+                    <a href="py_get_start.html" class="active">Get Started</a>
+                    <a href="py_syntax.html">Syntax</a>
+                    <a href="py_comments.html">Comments</a>
+                    <a href="py_variables.html">Variables</a>
+                    <a href="py_data_types.html">Data Types</a>
+                    <a href="py_numbers.html">Numbers</a>
+                    <a href="py_strings.html">Strings</a>
+                    <a href="py_booleans.html">Booleans</a>
+                    <a href="py_operators.html">Operators</a>
+                    <a href="py_lists.html">Lists</a>
+                    <a href="py_tuples.html">Tuples</a>
+                    <a href="py_sets.html">Sets</a>
+                    <a href="py_dictionaries.html">Dictionaries</a>
+                </div>
+
+                <div class="main">
+                    <h1>Get Start</h1>
+
+                    <h3>Python Install</h3>
+                    <ul>
+                        <li>Many PCs and Macs will have python already installed.</li>
+                        <li>To check if python is installed on your computer, open the command line and type :</li>
+                        <div class="code">
+                            python --version
+                        </div>
+                        <li>If Python is installed, it will show the Python version.</li>
+                    </ul><hr>
+                    
+                    <h3>Python Quickstart</h3>
+                    <ul>
+                        <li>Python is an interpreted programming language,
+                            this means that as a developer you write Python
+                            (.py) files in a text editor and then put those
+                            files into the python interpreter to be executed.</li>
+                        <li>The way to run a python file is like this on the command line :</li>
+                        <div class="code">
+                            python helloworld.py
+                        </div>
+                        <li>Where helloworld.py is the name of your python file.</li>
+                    </ul><hr>
+                    
+                    <h3>Your First Python Program</h3>
+                    <ul>
+                        <li>Create a file called helloworld.py, and write the following code in it:</li>
+                        <div class="code">
+                            print("Hello, World!")
+                        </div>
+                        <li>Save the file and run it in the command line.</li><br/>
+                        <li>Output:</li>
+                        <div class="code">
+                            Hello, World!
+                        </div>
+                    </ul><hr>
+
+                    <h3>The Python Command Line</h3>
+                    <ul>
+                        <li>To test a short amount of code in python sometimes it is quickest and easiest to not write the code in a file.</li>
+                        <li>This is made possible because Python can be run as a command line itself.</li>
+                        <li>Type the following on the Windows, Mac or Linux command line:</li>
+                        <div class="code">
+                            python
+                        </div><br/>
+                        <li>After that you can write python code directly:</li>
+                        <div class="code">
+                            print("Hello, World!")
+                        </div><br/>
+                        <li>To exit the Python command line interface type:</li>
+                        <div class="code">
+                            exit()
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('header').classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+    </body>
+</html>

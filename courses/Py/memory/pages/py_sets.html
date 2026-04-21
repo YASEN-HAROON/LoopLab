@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>LoopLab | Python Sets</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="../Py.css" rel="stylesheet">
+        <link rel="icon" href="../../../../images/Logo.png" type="image/svg+xml">
+    </head>
+    <body>
+
+        <header>
+            <div class="header-inner">
+                <div class="logo">LoopLab</div>
+                <nav>
+                    <a href="../../../../index.html">Home</a>
+                    <a href="#" class="active">PYTHON</a>
+                    <a href="../../../Css/Css_Course.html">CSS</a>
+                    <a href="../../../Html/Html_Course.html">HTML</a>
+                    <a href="../../../Js/Js_Course.html">JS</a>
+                    <a href="../../../php/php_Course.html">PHP</a>
+                    <a href="../../../Cpp/Cpp_Course.html">C++</a>
+                </nav>
+            </div>
+        </header>
+
+        <article>
+            <div class="container">
+
+                <div class="sidenav">
+                    <h2>Python Tutorial</h2>
+                    <a href="../../Py_Course.html" >Python Home</a>
+                    <a href="py_intro.html">Python Intro</a>
+                    <a href="py_get_start.html">Get Started</a>
+                    <a href="py_syntax.html">Syntax</a>
+                    <a href="py_comments.html">Comments</a>
+                    <a href="py_variables.html">Variables</a>
+                    <a href="py_data_types.html">Data Types</a>
+                    <a href="py_numbers.html">Numbers</a>
+                    <a href="py_strings.html">Strings</a>
+                    <a href="py_booleans.html">Booleans</a>
+                    <a href="py_operators.html">Operators</a>
+                    <a href="py_lists.html">Lists</a>
+                    <a href="py_tuples.html">Tuples</a>
+                    <a href="py_sets.html" class="active">Sets</a>
+                    <a href="py_dictionaries.html">Dictionaries</a>
+                </div>
+
+                <div class="main">
+                    <h1>Sets</h1>
+
+                    <h3>What is a Set?</h3>
+                    <ul>
+                        <li>A set is a collection that is:</li>
+                        <ul>
+                            <li>Unordered</li>
+                            <li>Unchangeable (items cannot be edited)</li>
+                            <li>No duplicate values</li>
+                        </ul>
+                        <div class="code">
+                            my_set = {"apple", "banana", "cherry"}
+                        </div>
+                        <li>Duplicates are automatically removed</li>
+                    </ul><hr>
+
+                    <h3>Accessing Set Items</h3>
+                    <ul>
+                        <li>You cannot access by index (because sets are unordered)</li>
+                        <li>You can:</li>
+                        <ul>
+                            <li>Loop through it</li>
+                            <li>Check if an item exists using in</li>
+                        </ul>
+                        <div class="code">
+                            for x in my_set: <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;print(x) <br><br>
+
+                            print("apple" in my_set)
+                        </div>
+                    </ul><hr>
+
+                    <h3>Adding Items</h3>
+                    <ul>
+                        <li>Add one item:</li>
+                        <div class="code">
+                            my_set.add("orange")
+                        </div>
+                        <li>Add multiple items:</li>
+                        <div class="code">
+                            my_set.update(["mango", "grape"])
+                        </div>
+                    </ul><hr>
+
+                    <h3>Removing Items</h3>
+                    <ul>
+                        <li>Remove item (error if not found) :</li>
+                        <div class="code">
+                            my_set.remove("banana")
+                        </div>
+                        <li>Remove item safely :</li>
+                        <div class="code">
+                            my_set.discard("banana")
+                        </div>
+                        <li>Remove random item :</li>
+                        <div class="code">
+                            my_set.pop()
+                        </div>
+                        <li>Clear set :</li>
+                        <div class="code">
+                            my_set.clear()
+                        </div>
+                    </ul><hr>
+
+                    <h3>Looping Through a Set</h3>
+                    <ul>
+                        <div class="code">
+                            for item in my_set:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;print(item)
+                        </div>
+                    </ul><hr>
+
+                    <h3>Joining Sets</h3>
+                    <ul>
+                        <li>Union (combine sets):</li>
+                        <div class="code">
+                            set3 = set1.union(set2)<br>
+                            <p style="color: rgb(75, 95, 78);"># or</p>
+                            set1.update(set2)
+                        </div>
+                        <li>Intersection (common items):</li>
+                        <div class="code">
+                            set1.intersection(set2)
+                        </div>
+                        <li>Difference (items in set1 not in set2):</li>
+                        <div class="code">
+                            set1.difference(set2)
+                        </div>
+                        <li>Symmetric Difference (items not common):</li>
+                        <div class="code">
+                            set1.symmetric_difference(set2)
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('header').classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+    </body>
+</html>

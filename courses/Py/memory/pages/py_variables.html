@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>LoopLab | Python Variables</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="../Py.css" rel="stylesheet">
+        <link rel="icon" href="../../../../images/Logo.png" type="image/svg+xml">
+    </head>
+    <body>
+
+        <header>
+            <div class="header-inner">
+                <div class="logo">LoopLab</div>
+                <nav>
+                    <a href="../../../../index.html">Home</a>
+                    <a href="#" class="active">PYTHON</a>
+                    <a href="../../../Css/Css_Course.html">CSS</a>
+                    <a href="../../../Html/Html_Course.html">HTML</a>
+                    <a href="../../../Js/Js_Course.html">JS</a>
+                    <a href="../../../php/php_Course.html">PHP</a>
+                    <a href="../../../Cpp/Cpp_Course.html">C++</a>
+                </nav>
+            </div>
+        </header>
+
+        <article>
+            <div class="container">
+
+                <div class="sidenav">
+                    <h2>Python Tutorial</h2>
+                    <a href="../../Py_Course.html" >Python Home</a>
+                    <a href="py_intro.html">Python Intro</a>
+                    <a href="py_get_start.html">Get Started</a>
+                    <a href="py_syntax.html">Syntax</a>
+                    <a href="py_comments.html">Comments</a>
+                    <a href="py_variables.html" class="active">Variables</a>
+                    <a href="py_data_types.html">Data Types</a>
+                    <a href="py_numbers.html">Numbers</a>
+                    <a href="py_strings.html">Strings</a>
+                    <a href="py_booleans.html">Booleans</a>
+                    <a href="py_operators.html">Operators</a>
+                    <a href="py_lists.html">Lists</a>
+                    <a href="py_tuples.html">Tuples</a>
+                    <a href="py_sets.html">Sets</a>
+                    <a href="py_dictionaries.html">Dictionaries</a>
+                </div>
+
+                <div class="main">
+                    <h1>Variables</h1>
+
+                    <h3>What is a Variable</h3>
+                    <ul>
+                        <li>A variable is a container used to store data in a program.</li>
+                        <li>Example:</li>
+                        <div class="code">
+                            x = 5 <br/>
+                            name = "John"
+                        </div>
+                    </ul><hr>
+
+                    <h3>Creating Variables</h3>
+                    <ul>
+                        <li>In Python, you do not need to declare the type of a variable.</li>
+                        <li>A variable is created when you assign a value to it.</li>
+                        <li>Example:</li>
+                        <div class="code">
+                            x = 5 <br/>
+                            y = "John"
+                        </div>
+                    </ul><hr>
+
+                    <h3>Changing Variable Type</h3>
+                    <ul>
+                        <li>Python allows you to change the type of a variable.</li>
+                        <li>Example:</li>
+                        <div class="code">
+                            x = 4 <br/>
+                            x = "Sally"
+                        </div>
+                        <li>First it was a number, then it became a string.</li>
+                    </ul><hr>
+
+                    <h3>Variable Naming Rules</h3>
+                    <ul>
+                        <li>A variable name must follow these rules:</li>
+                        <ul>
+                            <li>Must start with a letter or _</li>
+                            <li>Can contain letters, numbers, and _</li>
+                            <li>Cannot start with a number</li>
+                            <li>Variable names are case-sensitive</li>
+                        </ul>
+                        <li>Correct examples:</li>
+                        <div class="code">
+                            age <br/>
+                            user_name <br/>
+                            _myvar
+                        </div>
+                        <li>Incorrect examples:</li>
+                        <div class="code">
+                            2name <br/>
+                            my-name <br/>
+                            my name
+                        </div>
+                    </ul><hr>
+
+                    <h3>Multi-word Variable Names</h3>
+                    <ul>
+                        <li>Common styles:</li>
+                        <li>snake_case (most common in Python)</li>
+                        <div class="code">
+                            my_variable_name
+                        </div>
+                        <li>camelCase</li>
+                        <div class="code">
+                            myVariableName
+                        </div>
+                        <li>PascalCase</li>
+                        <div class="code">
+                            MyVariableName
+                        </div>
+                    </ul><hr>
+
+                    <h3>Assigning Multiple Variables</h3>
+                    <ul>
+                        <li>You can assign multiple variables in one line:</li>
+                        <div class="code">
+                            x, y, z = "Orange", "Banana", "Cherry"
+                        </div>
+                        <li>Assign the same value:</li>
+                        <div class="code">
+                            x = y = z = "Orange"
+                        </div>
+                    </ul><hr>
+
+                    <h3>Output Variables</h3>
+                    <ul>
+                        <li>Use print() to display variables.</li>
+                        <li>Example:</li>
+                        <div class="code">
+                            x = "Python" <br/>
+                            print(x)
+                        </div>
+                        <li>Combine text and variables:</li>
+                        <div class="code">
+                            x = "awesome" <br/>
+                            print("Python is " + x)
+                        </div>
+                        <li>Multiple variables:</li>
+                        <div class="code">   
+                            x = "Python" <br/>
+                            y = "is" <br/>
+                            z = "awesome" <br/><br/>
+
+                            print(x, y, z)
+                        </div>
+                    </ul><hr>
+
+                    <h3>Adding Variables</h3>
+                    <ul>
+                        <li>Numbers → addition</li>
+                        <div class="code">
+                            x = 5<br/>
+                            y = 10<br/>
+                            print(x + y)
+                        </div>
+                        <li>Strings → concatenation</li>
+                        <div class="code">
+                            x = "Hello "<br/>
+                            y = "World"<br/><br/>
+                            print(x + y)
+                        </div>
+                    </ul><hr>
+
+                    <h3>Global Variables</h3>
+                    <ul>
+                        <li>A global variable is created outside a function and can be used inside it.</li>
+                        <li>Example:</li>
+                        <div class="code">
+                            x = "awesome"<br/><br/>
+
+                            def myfunc():<br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;print("Python is " + x)<br/><br/>
+
+                            myfunc()
+                        </div>
+                        <li>To modify it inside a function, use global.</li>
+                        <div class="code">
+                            x = "awesome"<br/><br/>
+
+                            def myfunc():<br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;global x<br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;x = "fantastic"<br/><br/>
+
+                            myfunc()<br/>
+                            print(x)
+                        </div>
+                    </ul><hr>
+
+                    <h3>Deleting Variables</h3>
+                    <ul>
+                        <li>You can delete a variable using del.</li>
+                        <li>Example:</li>
+                        <div class="code">
+                            x = 5<br/>
+                            del x
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('header').classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+    </body>
+</html>

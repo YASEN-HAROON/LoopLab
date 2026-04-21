@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>LoopLab | Python Tuples</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="../Py.css" rel="stylesheet">
+        <link rel="icon" href="../../../../images/Logo.png" type="image/svg+xml">
+    </head>
+    <body>
+
+        <header>
+            <div class="header-inner">
+                <div class="logo">LoopLab</div>
+                <nav>
+                    <a href="../../../../index.html">Home</a>
+                    <a href="#" class="active">PYTHON</a>
+                    <a href="../../../Css/Css_Course.html">CSS</a>
+                    <a href="../../../Html/Html_Course.html">HTML</a>
+                    <a href="../../../Js/Js_Course.html">JS</a>
+                    <a href="../../../php/php_Course.html">PHP</a>
+                    <a href="../../../Cpp/Cpp_Course.html">C++</a>
+                </nav>
+            </div>
+        </header>
+
+        <article>
+            <div class="container">
+
+                <div class="sidenav">
+                    <h2>Python Tutorial</h2>
+                    <a href="../../Py_Course.html" >Python Home</a>
+                    <a href="py_intro.html">Python Intro</a>
+                    <a href="py_get_start.html">Get Started</a>
+                    <a href="py_syntax.html">Syntax</a>
+                    <a href="py_comments.html">Comments</a>
+                    <a href="py_variables.html">Variables</a>
+                    <a href="py_data_types.html">Data Types</a>
+                    <a href="py_numbers.html">Numbers</a>
+                    <a href="py_strings.html">Strings</a>
+                    <a href="py_booleans.html">Booleans</a>
+                    <a href="py_operators.html">Operators</a>
+                    <a href="py_lists.html">Lists</a>
+                    <a href="py_tuples.html" class="active">Tuples</a>
+                    <a href="py_sets.html">Sets</a>
+                    <a href="py_dictionaries.html">Dictionaries</a>
+                </div>
+
+                <div class="main">
+                    <h1>Tuples</h1>
+
+                    <h3>What Are Python Tuples</h3>
+                    <ul>
+                        <li>Tuples are like lists but ordered and immutable (meaning you cannot change items after creation)</li>
+                        <li>Tuples are written with parentheses ( )</li>
+                        <li>They can contain duplicate items and multiple data types</li>
+                    </ul><hr>
+
+                    <h3>Accessing Tuple Items</h3>
+                    <ul>
+                        <li>Access items using index numbers in square brackets (e.g., mytuple[0])</li>
+                        <li>Python supports negative indexing (-1 is last item)</li>
+                        <li>You can slice a tuple to get a range of items</li>
+                        <li>Check membership with in keyword (e.g., "apple" in mytuple)</li>
+                    </ul><hr>
+
+                    <h3>Updating Tuples (Workarounds)</h3>
+                    <ul>
+                        <li>Because tuples are immutable, you can’t change items directly</li>
+                        <li>Workaround: convert tuple to a list, modify it, then convert back to a tuple</li>
+                    </ul><hr>
+
+                    <h3>Unpacking Tuples</h3>
+                    <ul>
+                        <li>Tuple unpacking lets you assign each tuple item to a variable in one statement</li>
+                        <div class="code">
+                            a, b, c = ("apple", "banana", "cherry")
+                        </div>
+                        <li>If there are more values than variables, use * to collect the remaining items</li>
+                    </ul><hr>
+
+                    <h3>Looping Through Tuples</h3>
+                    <ul>
+                        <li>You can loop with a for loop, going through each item directly</li>
+                        <li>Or loop by index using range(len(tuple))</li>
+                        <li>while loops also work with a counter index</li>
+                    </ul><hr>
+
+                    <h3>Joining Tuples</h3>
+                    <ul>
+                        <li>Use the + operator to combine two tuples into a new one</li>
+                        <li>You can also multiply a tuple by a number to repeat its items</li>
+                    </ul><hr>
+
+                    <h3>Tuple Methods</h3>
+                    <ul>
+                        <li>Python tuples have two built-in methods :</li>
+                        <div class="code">
+                            count() — returns how many times a value appears <br>
+                            index() — returns the position of a value
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('header').classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+    </body>
+</html>

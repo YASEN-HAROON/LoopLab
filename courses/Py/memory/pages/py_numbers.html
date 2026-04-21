@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>LoopLab | Python Numbers</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="../Py.css" rel="stylesheet">
+        <link rel="icon" href="../../../../images/Logo.png" type="image/svg+xml">
+    </head>
+    <body>
+
+        <header>
+            <div class="header-inner">
+                <div class="logo">LoopLab</div>
+                <nav>
+                    <a href="../../../../index.html">Home</a>
+                    <a href="#" class="active">PYTHON</a>
+                    <a href="../../../Css/Css_Course.html">CSS</a>
+                    <a href="../../../Html/Html_Course.html">HTML</a>
+                    <a href="../../../Js/Js_Course.html">JS</a>
+                    <a href="../../../php/php_Course.html">PHP</a>
+                    <a href="../../../Cpp/Cpp_Course.html">C++</a>
+                </nav>
+            </div>
+        </header>
+
+        <article>
+            <div class="container">
+
+                <div class="sidenav">
+                    <h2>Python Tutorial</h2>
+                    <a href="../../Py_Course.html" >Python Home</a>
+                    <a href="py_intro.html">Python Intro</a>
+                    <a href="py_get_start.html">Get Started</a>
+                    <a href="py_syntax.html">Syntax</a>
+                    <a href="py_comments.html">Comments</a>
+                    <a href="py_variables.html">Variables</a>
+                    <a href="py_data_types.html">Data Types</a>
+                    <a href="py_numbers.html" class="active">Numbers</a>
+                    <a href="py_strings.html">Strings</a>
+                    <a href="py_booleans.html">Booleans</a>
+                    <a href="py_operators.html">Operators</a>
+                    <a href="py_lists.html">Lists</a>
+                    <a href="py_tuples.html">Tuples</a>
+                    <a href="py_sets.html">Sets</a>
+                    <a href="py_dictionaries.html">Dictionaries</a>
+                </div>
+
+                <div class="main">
+                    <h1>Numbers</h1>
+
+                    <h3> Numeric Types in Python</h3>
+                    <ul>
+                        <li>Python has three numeric types:</li>
+                        <ul>
+                            <li>int</li>
+                            <li>float</li>
+                            <li>complex</li>
+                        </ul>
+                        <li>Example:</li>
+                        <div class="code">
+                            x = 1     <p style="color: rgb(75, 95, 78); display: inline;"># int</p><br/>
+                            y = 2.8   <p style="color: rgb(75, 95, 78); display: inline;"># float</p><br/>
+                            z = 1j    <p style="color: rgb(75, 95, 78); display: inline;"># complex</p>
+                        </div>
+                    </ul><hr>
+
+                    <h3>Check the Type of a Number</h3>
+                    <ul>
+                        <li>You can use the type() function to check the data type of a variable.</li>
+                        <li>Example:</li>
+                        <div class="code">
+                            print(type(x))<br/>
+                            print(type(y))<br/>
+                            print(type(z))
+                        </div>
+                    </ul><hr>
+
+                    <h3>Integer (int)</h3>
+                    <ul>
+                        <li>An integer is a whole number.</li>
+                        <li>It can be positive or negative.</li>
+                        <li>It does not contain decimals.</li>
+                        <li>Example:</li>
+                        <div class="code">
+                            x = 10<br/>
+                            y = -5<br/>
+                            z = 100000
+                        </div>
+                    </ul><hr>
+
+                    <h3>Float</h3>
+                    <ul>
+                        <li>A float is a number with decimal points.</li>
+                        <li>It can also be written in scientific notation using "e".</li>
+                        <li>Example:</li>
+                        <div class="code">
+                            x = 1.5<br/>
+                            y = -3.14<br/>
+                            z = 35e3    <p style="color: rgb(75, 95, 78); display: inline;"># 35000.0</p>
+                        </div>
+                    </ul><hr>
+
+                    <h3>Complex Numbers</h3>
+                    <ul>
+                        <li>A complex number contains a real part and an imaginary part.</li>
+                        <li>The imaginary part is written with j.</li>
+                        <li>Example:</li>
+                        <div class="code">
+                            x = 3 + 5j<br/>
+                            y = 5j
+                        </div>
+                    </ul><hr>
+
+                    <h3>Type Conversion</h3>
+                    <ul>
+                        <li>You can convert numbers using:</li>
+                        <li>int()</li>
+                        <li>float()</li>
+                        <li>complex()</li>
+                        <li>Example:</li>
+                        <div class="code">
+                            x = 1<br/>
+                            y = 2.8<br/><br/>
+
+                            a = float(x)<br/>
+                            b = int(y)<br/>
+                            c = complex(x)
+                        </div>
+                        <li>Note: Complex numbers cannot be converted into other number types.</li>
+                    </ul><hr>
+
+                    <h3>Random Numbers</h3>
+                    <ul>
+                        <li>Python uses the random module to generate random numbers.</li>
+                        <li>Example:</li>
+                        <div class="code">
+                            <p style="color: rgb(153, 28, 132); display: inline;">import</p> random<br/>
+                            print(random.randrange(1, 10))
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('header').classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+    </body>
+</html>

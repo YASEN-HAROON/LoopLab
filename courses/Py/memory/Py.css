@@ -1,0 +1,223 @@
+:root {
+    --bg: #000000;
+    --bg-soft: #0a0a0a;
+    --bg-card: rgba(15,15,15,0.65);
+    --text: #f9fafb;
+    --text-muted: #9ca3af;
+    --accent: #10f060;
+    --accent-glow: rgba(16,240,96,0.22);
+    --yellow: #fde047;
+    --radius-lg: 32px;
+    --transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    --w3-green: #04AA6D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+    background-image: 
+        radial-gradient(ellipse at 20% 40%, rgba(16,240,96,0.09) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 70%, rgba(253,224,71,0.07) 0%, transparent 70%);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1.2rem 0;
+    backdrop-filter: blur(20px);
+    background: rgba(0,0,0,0.75);
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    transition: var(--transition);
+}
+
+header.scrolled {
+    padding: 0.9rem 0;
+    background: rgba(0,0,0,0.9);
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.3rem;
+    font-weight: 900;
+    letter-spacing: -1.5px;
+    background: linear-gradient(90deg, var(--accent), #34d399, var(--yellow));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 30px rgba(16,240,96,0.45);
+}
+
+nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+    margin-left: 2.2rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--text);
+    text-shadow: 0 0 16px rgba(16,240,96,0.7);
+}
+
+.container {
+    display: flex;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.sidenav {
+    width: 260px;
+    background: var(--bg-card);
+    border-right: 1px solid rgba(255,255,255,0.05);
+    padding-top: 7rem;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+}
+
+.sidenav h2 {
+    padding: 1.4rem 1.8rem;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.4rem;
+    color: var(--accent);
+    border-bottom: 1px solid rgba(16,240,96,0.15);
+    margin-bottom: 1rem;
+    text-shadow: 0 0 12px var(--accent-glow);
+}
+
+.sidenav a {
+    display: block;
+    color: var(--text-muted);
+    padding: 0.9rem 1.8rem;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.sidenav a:hover,
+.sidenav a.active {
+    background: rgba(16,240,96,0.12);
+    color: var(--accent);
+    text-shadow: 0 0 12px var(--accent-glow);
+}
+
+.main {
+    flex: 1;
+    margin-left: 260px;
+    padding: 9rem 4rem 6rem;
+}
+
+.main h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(4.2rem, 9vw, 7.5rem);
+    font-weight: 900;
+    letter-spacing: -4px;
+    background: linear-gradient(90deg, var(--text), var(--accent), var(--yellow));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2.5rem;
+}
+
+.main h3 {
+    font-size: 2.2rem;
+    margin: 3.5rem 0 1.6rem;
+    color: var(--accent);
+    text-shadow: 0 0 18px var(--accent-glow);
+}
+
+.main ul {
+    list-style: none;
+    margin: 1.2rem 0;
+    padding-left: 1.8rem;
+}
+
+.main ul li {
+    font-size: 1.18rem;
+    color: var(--text-muted);
+    margin-bottom: 0.9rem;
+    position: relative;
+}
+
+.main ul li::before {
+    content: "→";
+    color: var(--accent);
+    position: absolute;
+    left: -1.8rem;
+    font-weight: bold;
+}
+
+.code {
+    background: #0d1117;
+    border: 1px solid rgba(16,240,96,0.18);
+    border-left: 5px solid var(--accent);
+    padding: 1.6rem;
+    margin: 2rem 0;
+    border-radius: 12px;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 1.05rem;
+    overflow-x: auto;
+    box-shadow: inset 0 0 30px rgba(0,0,0,0.6);
+}
+
+@media (max-width: 992px) {
+    .sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-top: 1rem;
+    }
+    .main {
+        margin-left: 0;
+        padding: 7rem 2rem 4rem;
+    }
+    .container {
+        flex-direction: column;
+    }
+    nav a {
+        margin-left: 1.4rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .main h1 {
+        font-size: clamp(3rem, 12vw, 5rem);
+    }
+    .header-inner {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    nav {
+        text-align: center;
+    }
+    nav a {
+        margin: 0 0.8rem;
+    }
+}

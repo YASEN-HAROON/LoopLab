@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>LoopLab | Python Strings</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="../Py.css" rel="stylesheet">
+        <link rel="icon" href="../../../../images/Logo.png" type="image/svg+xml">
+    </head>
+    <body>
+
+        <header>
+            <div class="header-inner">
+                <div class="logo">LoopLab</div>
+                <nav>
+                    <a href="../../../../index.html">Home</a>
+                    <a href="#" class="active">PYTHON</a>
+                    <a href="../../../Css/Css_Course.html">CSS</a>
+                    <a href="../../../Html/Html_Course.html">HTML</a>
+                    <a href="../../../Js/Js_Course.html">JS</a>
+                    <a href="../../../php/php_Course.html">PHP</a>
+                    <a href="../../../Cpp/Cpp_Course.html">C++</a>
+                </nav>
+            </div>
+        </header>
+
+        <article>
+            <div class="container">
+
+                <div class="sidenav">
+                    <h2>Python Tutorial</h2>
+                    <a href="../../Py_Course.html" >Python Home</a>
+                    <a href="py_intro.html">Python Intro</a>
+                    <a href="py_get_start.html">Get Started</a>
+                    <a href="py_syntax.html">Syntax</a>
+                    <a href="py_comments.html">Comments</a>
+                    <a href="py_variables.html">Variables</a>
+                    <a href="py_data_types.html">Data Types</a>
+                    <a href="py_numbers.html">Numbers</a>
+                    <a href="py_strings.html" class="active">Strings</a>
+                    <a href="py_booleans.html">Booleans</a>
+                    <a href="py_operators.html">Operators</a>
+                    <a href="py_lists.html">Lists</a>
+                    <a href="py_tuples.html">Tuples</a>
+                    <a href="py_sets.html">Sets</a>
+                    <a href="py_dictionaries.html">Dictionaries</a>
+                </div>
+
+                <div class="main">
+                    <h1>Strings</h1>
+
+                    <h3>What is a String</h3>
+                    <ul>
+                        <li>A string is text in Python.</li>
+                        <li>It is written inside single quotes (' ') or double quotes (" ").</li>
+                        <div class="code">    
+                            text = "Hello"<br/>
+                            text = 'Hello'
+                        </div>
+                    </ul><hr>
+
+                    <h3>Access Characters (Indexing)</h3>
+                    <ul>
+                        <li>You can access characters using their index number.</li>
+                        <div class="code">
+                            text = "Hello"<br/>
+                            print(text[0])  <p style="color: rgb(75, 95, 78); display: inline;"># H</p>
+
+                        </div>
+                        <li>Index starts from 0.</li>
+                    </ul><hr>
+
+                    <h3>String Slicing</h3>
+                    <ul>
+                        <li>Used to get part of a string.</li>
+                        <div class="code">
+                            text = "Hello World"<br/>
+                            print(text[0:5]) <p style="color: rgb(75, 95, 78); display: inline;"># Hello</p>
+                        </div>
+                        <li>start:end</li>
+                        <li>End position is not included.</li>
+                    </ul><hr>
+
+                    <h3>String Methods</h3>
+                    <ul>
+                        <li>Common functions used with strings.</li>
+                        <li>Examples:</li>
+                        <div class="code">
+                            text.upper() <p style="color: rgb(75, 95, 78); display: inline;"># HELLO</p><br/>
+                            text.lower() <p style="color: rgb(75, 95, 78); display: inline;"># hello</p><br/>
+                            text.strip() <p style="color: rgb(75, 95, 78); display: inline;"># remove spaces</p><br/>
+                            text.replace("H","J")<br/>
+                            text.split(",")
+                        </div>
+                    </ul>
+
+                    <h3>Concatenation (Joining Strings)</h3>
+                    <ul>
+                        <div class="code">
+                            a = "Hello"<br/>
+                            b = "World"<br/><br/>
+
+                            print(a + " " + b)
+                        </div>
+                        <li>Output:</li>
+                        <div class="code">
+                            Hello World
+                        </div>
+                    </ul>
+
+                    <h3>String Formatting</h3>
+                    <ul>
+                        <li>Used to insert variables inside text.</li>
+                        <li>Using f-strings:</li>
+                        <div class="code">
+                            name = "Ali"<br/>
+                            age = 20<br/><br/>
+
+                            print(f"My name is {name} and I am {age}")
+                        </div>
+                    </ul>
+
+                    <h3>Escape Characters</h3>
+                    <ul>
+                        <li>Used for special characters.</li>
+                        <li>Examples:</li>
+                        <div class="code">
+                            \"  <p style="color: rgb(75, 95, 78); display: inline;"># double quote</p><br/>
+                            \'  <p style="color: rgb(75, 95, 78); display: inline;"># single quote</p><br/>
+                            \n  <p style="color: rgb(75, 95, 78); display: inline;"># new line</p><br/>
+                            \t  <p style="color: rgb(75, 95, 78); display: inline;"># tab</p><br/>
+                            \\  <p style="color: rgb(75, 95, 78); display: inline;"># backslash</p>
+                        </div>
+                        <li>Example:</li>
+                        <div class="code">
+                            print("He said \"Hello\"")
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('header').classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+    </body>
+</html>

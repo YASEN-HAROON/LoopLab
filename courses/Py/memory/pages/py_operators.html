@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>LoopLab | Python Operators</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="../Py.css" rel="stylesheet">
+        <link rel="icon" href="../../../../images/Logo.png" type="image/svg+xml">
+    </head>
+    <body>
+
+        <header>
+            <div class="header-inner">
+                <div class="logo">LoopLab</div>
+                <nav>
+                    <a href="../../../../index.html">Home</a>
+                    <a href="#" class="active">PYTHON</a>
+                    <a href="../../../Css/Css_Course.html">CSS</a>
+                    <a href="../../../Html/Html_Course.html">HTML</a>
+                    <a href="../../../Js/Js_Course.html">JS</a>
+                    <a href="../../../php/php_Course.html">PHP</a>
+                    <a href="../../../Cpp/Cpp_Course.html">C++</a>
+                </nav>
+            </div>
+        </header>
+
+        <article>
+            <div class="container">
+
+                <div class="sidenav">
+                    <h2>Python Tutorial</h2>
+                    <a href="../../Py_Course.html" >Python Home</a>
+                    <a href="py_intro.html">Python Intro</a>
+                    <a href="py_get_start.html">Get Started</a>
+                    <a href="py_syntax.html">Syntax</a>
+                    <a href="py_comments.html">Comments</a>
+                    <a href="py_variables.html">Variables</a>
+                    <a href="py_data_types.html">Data Types</a>
+                    <a href="py_numbers.html">Numbers</a>
+                    <a href="py_strings.html">Strings</a>
+                    <a href="py_booleans.html">Booleans</a>
+                    <a href="py_operators.html" class="active">Operators</a>
+                    <a href="py_lists.html">Lists</a>
+                    <a href="py_tuples.html">Tuples</a>
+                    <a href="py_sets.html">Sets</a>
+                    <a href="py_dictionaries.html">Dictionaries</a>
+                </div>
+
+                <div class="main">
+                    <h1>Operators</h1>
+
+                    <h3>What Are Operators?</h3>
+                    <ul>
+                        <li>Operators are symbols that perform operations on values or variables (called operands).
+                            <br/>They are essential for doing math, comparing values, combining conditions, and more.</li>
+                    </ul><hr>
+
+                    <h3>Arithmetic Operators</h3>
+                    <ul>
+                        <li>Used for mathematical operations :</li>
+                        <ul>
+                            <li>Operator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meaning</li>
+                            <li>+&nbsp;&nbsp;&nbsp;Addition</li>
+                            <li>-&nbsp;&nbsp;&nbsp;Subtraction</li>
+                            <li>*&nbsp;&nbsp;&nbsp;Multiplication</li>
+                            <li>/&nbsp;&nbsp;&nbsp;Division (float result)</li>
+                            <li>//&nbsp;&nbsp;Floor division (integer result)</li>
+                            <li>%&nbsp;&nbsp;&nbsp;Modulus (remainder)</li>
+                            <li>**&nbsp;&nbsp;Exponentiation (power)</li>
+                        </ul>
+                        <li>Example :</li>
+                        <div class="code">
+                            5 + 3&nbsp;&nbsp;&nbsp;<p style="color: rgb(75, 95, 78); display: inline;"># 8</p><br/>
+                            10 % 3&nbsp;&nbsp;<p style="color: rgb(75, 95, 78); display: inline;"># 1</p><br/>
+                            2 ** 3&nbsp;&nbsp;<p style="color: rgb(75, 95, 78); display: inline;"># 8</p>
+                        </div>
+                    </ul><hr>
+
+                    <h3>Assignment Operators</h3>
+                    <ul>
+                        <li>Used to assign values to variables, including shortcuts :</li>
+                        <ul>
+                            <li>Operator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meaning</li>
+                            <li>=&nbsp;&nbsp;&nbsp;Assign</li>
+                            <li>+=&nbsp;&nbsp;&nbsp;Add and assign</li>
+                            <li>-=&nbsp;&nbsp;&nbsp;Subtract and assign</li>
+                            <li>*=&nbsp;&nbsp;&nbsp;Multiply and assign</li>
+                            <li>/=&nbsp;&nbsp;Divide and assign</li>
+                            <li>//=&nbsp;&nbsp;&nbsp;Floor divide and assign</li>
+                            <li>%=&nbsp;&nbsp;Modulus and assign</li>
+                            <li>**&nbsp;&nbsp;Power and assign</li>
+                        </ul>
+                        <li>Example:</li>
+                        <div class="code">
+                            x = 5<br/>
+                            x += 2&nbsp;&nbsp;<p style="color: rgb(75, 95, 78); display: inline;"># same as x = x + 2</p>
+                        </div>
+                    </ul><hr>
+
+                    <h3>Comparison Operators</h3>
+                    <ul>
+                        <li>Used to compare values, and return True or False :</li>
+                        <ul>
+                            <li>Operator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meaning</li>
+                            <li>==&nbsp;&nbsp;Equal to</li>
+                            <li>!=&nbsp;&nbsp;Not equal to</li>
+                            <li>>&nbsp;&nbsp;&nbsp;Greater than</li>
+                            <li><&nbsp;&nbsp;&nbsp;Less than</li>
+                            <li>>=&nbsp;&nbsp;Greater or equal</li>
+                            <li><=&nbsp;&nbsp;Less or equal</li>
+                        </ul>
+                        <li>Example :</li>
+                        <div class="code">
+                            5 > 3&nbsp;&nbsp;&nbsp;<p style="color: rgb(75, 95, 78); display: inline;"># True</p><br/>
+                            5 == 2&nbsp;&nbsp;<p style="color: rgb(75, 95, 78); display: inline;"># False</p>
+                        </div>
+                    </ul><hr>
+
+                    <h3>Logical Operators</h3>
+                    <ul>
+                        <li>Used to combine Boolean expressions :</li>
+                        <ul>
+                            <li>Operator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meaning</li>
+                            <li>and&nbsp;&nbsp;&nbsp;True if both are True</li>
+                            <li>or&nbsp;&nbsp;&nbsp;&nbsp;True if at least one is True</li>
+                            <li>not&nbsp;&nbsp;&nbsp;Reverses True ↔ False</li>
+                        </ul>
+                        <li>Example :</li>
+                        <div class="code">
+                            True and False&nbsp;&nbsp;&nbsp;<p style="color: rgb(75, 95, 78); display: inline;"># False</p><br/>
+                            not (5 > 3)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p style="color: rgb(75, 95, 78); display: inline;"># False</p>
+                        </div>
+                    </ul><hr>
+
+                    <h3>Identity Operators</h3>
+                    <ul>
+                        <li>Check if two variables refer to the same object (not just equal value) :</li>
+                        <ul>
+                            <li>Operator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meaning</li>
+                            <li>is&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;True if they are the same object</li>
+                            <li>is not&nbsp;&nbsp;&nbsp;&nbsp;True if different objects</li>
+                        </ul>
+                        <li>Example :</li>
+                        <div class="code">
+                            a = [1,2,3] <br/>
+                            b = a <br/>
+                            c = [1,2,3] <br/>
+                            a is b&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p style="color: rgb(75, 95, 78); display: inline;"># True</p> <br/>
+                            a is c&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p style="color: rgb(75, 95, 78); display: inline;"># False</p>
+                        </div>
+                    </ul><hr>
+
+                    <h3>Membership Operators</h3>
+                    <ul>
+                        <li>Test whether a value is in a sequence (like list, string, tuple) :</li>
+                        <ul>
+                            <li>Operator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meaning</li>
+                            <li>in&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;True if value is found</li>
+                            <li>not in&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;True if value is not found</li>
+                        </ul>
+                        <li>Example :</li>
+                        <div class="code">
+                            'k' in 'skill'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p style="color: rgb(75, 95, 78); display: inline;"># True</p><br/>
+                            10 not in [1,2,3]&nbsp;&nbsp;&nbsp;<p style="color: rgb(75, 95, 78); display: inline;"># True</p>
+                        </div>
+                    </ul><hr>
+
+                    <h3>Bitwise Operators</h3>
+                    <ul>
+                        <li>Operate on bits of integers :</li>
+                        <ul>
+                            <li>Operator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meaning</li>
+                            <li>&&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bitwise AND</li>
+                            <li>`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`</li>
+                            <li>^&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bitwise XOR</li>
+                            <li>~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bitwise NOT (flip bits)</li>
+                            <li><<&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Left shift</li>
+                            <li>>>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Right shift</li>
+                        </ul>
+                        <li>Example (conceptual):</li>
+                        <div class="code">
+                            5 & 3&nbsp;&nbsp;&nbsp;&nbsp;<p style="color: rgb(75, 95, 78); display: inline;"># 1 (0101 & 0011 → 0001)</p>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('header').classList.toggle('scrolled', window.scrollY > 50);    
+        });
+    </script>
+    </body>
+</html>
