@@ -10,10 +10,6 @@
         <link rel="icon" href="images/Logo.png" type="image/svg+xml">
     </head>
     <body>
-        <div id="splash">
-            <img src="images/Logo.png">
-        </div>
-
         <div id="mainContent">
             <header id="header">
                 <div class="container header-inner">
@@ -128,23 +124,6 @@
             window.addEventListener('scroll', () => {
             document.getElementById('header').classList.toggle('scrolled', window.scrollY > 100);
             });
-
-            window.onload = function() {
-            const splash = document.getElementById("splash");
-            const main = document.getElementById("mainContent");
-
-            splash.classList.add("show");
-
-            setTimeout(() => {
-                splash.classList.remove("show");
-            }, 2000);
-
-            setTimeout(() => {
-                splash.style.display = "none";
-                main.style.display = "flex";
-                setTimeout(() => main.classList.add("show"), 10);
-            }, 3000);
-            };
         </script>
 
     </body>
